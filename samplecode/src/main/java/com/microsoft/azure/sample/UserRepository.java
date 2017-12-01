@@ -7,9 +7,10 @@
 package com.microsoft.azure.sample;
 
 import com.microsoft.azure.spring.data.documentdb.repository.DocumentDbRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 
-@Repository
+@RepositoryRestResource
 public interface UserRepository extends DocumentDbRepository<User, String> {
 }
 
